@@ -1,15 +1,15 @@
 package dao;
 
-import javax.persistence.Entity;
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 
-import antlr.collections.List;
 import posjavamavenhibernate.HibernateUtil;
 
 public class DaoGeneric<E> {
 
-	private EntityManager entityManager = HibernateUtil.getEntityManager();
+	private  EntityManager entityManager = HibernateUtil.getEntityManager();
 
 	public void salvar(E entidade) {
 
@@ -75,6 +75,4 @@ public class DaoGeneric<E> {
 		
 		return lista;
 	}
-
-
 }

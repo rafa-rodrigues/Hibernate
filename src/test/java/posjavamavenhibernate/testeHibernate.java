@@ -1,9 +1,10 @@
 package posjavamavenhibernate;
 
+import java.util.List;
+
 import org.junit.Test;
 
 import Model.UsuarioPessoa;
-import antlr.collections.List;
 import dao.DaoGeneric;
 
 public class testeHibernate {
@@ -83,5 +84,13 @@ public class testeHibernate {
 		
 
 	}
-
+	
+	@Test
+	public void testeQuery() {
+		
+		DaoGeneric<UsuarioPessoa> daoGeneric = new DaoGeneric<UsuarioPessoa>();
+		List<UsuarioPessoa> list= 
+		
+	}
+	
 }
